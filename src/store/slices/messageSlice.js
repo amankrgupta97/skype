@@ -13,8 +13,8 @@ const messageSlice = createSlice({
       const msg = action.payload.typing;
       const allMsg = state[userId];
       const number = +_.keys(allMsg).pop() + 1;
-      console.log(userId);
-      console.log(msg);
+      // console.log(userId);
+      // console.log(msg);
       state = {
         ...state,
         [userId]: {
